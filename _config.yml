@@ -1,0 +1,29 @@
+# Site settings
+title:          Minimal
+description:    "Minimal blog for my study"
+url:            "https://qwerty220.github.io/"
+
+# Author
+author:
+  name:         Vitalij Lapshin
+  url:          https://qwerty220.github.io/
+  email:        qwerty220@xakep.ru
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+remote_theme: chesterhow/tale
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
