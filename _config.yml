@@ -15,8 +15,8 @@ markdown:       kramdown
 
 # Assets
 sass:
-  # sass_dir:     _sass
-  # style:        compressed
+  sass_dir:     _sass
+  style:        compressed
 
 # remote_theme: chesterhow/tale
 
