@@ -18,7 +18,7 @@ sass:
   sass_dir:     _sass
   style:        compressed
 
-# remote_theme: chesterhow/tale
+remote_theme: chesterhow/tale
 
 # Gems
 plugins:
