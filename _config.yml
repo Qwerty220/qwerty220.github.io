@@ -11,7 +11,7 @@ author:
 
 # Build settings
 markdown:       kramdown
-highlighter: rouge
+# highlighter: rouge
 
 # Assets
 sass:
