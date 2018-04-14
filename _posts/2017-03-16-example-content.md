@@ -106,7 +106,7 @@ var s = "JavaScript syntax highlighting";
 alert(s);
 {% endhighlight %}
 
-{% highlight java %}
+```java
 
 package com.apress.prospring5.ch18;
 
@@ -137,7 +137,7 @@ public static void main(String... args) throws Exception {
 
 }
 
-{% endhighlight %}
+```
 
 # Blockquotes
 {% highlight markdown %}
