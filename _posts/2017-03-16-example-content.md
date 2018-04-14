@@ -106,7 +106,7 @@ var s = "JavaScript syntax highlighting";
 alert(s);
 {% endhighlight %}
 
-{% highlight java native %}
+{% highlight java %}
 
 package com.apress.prospring5.ch18;
 
