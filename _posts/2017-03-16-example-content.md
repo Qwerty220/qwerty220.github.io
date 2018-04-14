@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 - Citation: <cite>&mdash; Chester How</cite>
-{% endhighlight %}
+  {% endhighlight %}
 
 - **Bold**
 - _Italics_
@@ -53,7 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 * Unordered list item 1
 * Unordered list item 2
 * Unordered list item 3
-{% endhighlight %}
+  {% endhighlight %}
 
 1. Ordered list item 1
 2. Ordered list item 2
@@ -104,6 +104,39 @@ Adding `linenos` to the Pygments tag enables line numbers.
 // Sample javascript code
 var s = "JavaScript syntax highlighting";
 alert(s);
+{% endhighlight %}
+
+{% highlight java native %}
+
+package com.apress.prospring5.ch18;
+
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.Date;
+
+public class SingerJobDemo {
+
+public static void main(String... args) throws Exception {
+​    ApplicationContext applicationContext
+​            = new ClassPathXmlApplicationContext("/spring/singerJob.xml");
+
+​    Job job = applicationContext.getBean(Job.class);
+​    JobLauncher jobLauncher = applicationContext.getBean(JobLauncher.class);
+
+​    JobParameters jobParameters = new JobParametersBuilder()
+​            .addDate("date", new Date())
+​            .toJobParameters();
+
+​    jobLauncher.run(job, jobParameters);
+}
+
+}
+
 {% endhighlight %}
 
 # Blockquotes
